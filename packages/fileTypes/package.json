@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "@austinbreslin/file-types",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "scripts": {
+        "build": "NODE_ENV=production rimraf ./dist && vite build && jampack ./dist",
+        "build:dev": "NODE_ENV=development vite build --mode development",
+        "dev": "NODE_ENV=development vite build --mode development --watch",
+        "lint": "tsc --noEmit && biome check ./src --config-path ../../biome.json",
+        "dev:lib": "NODE_ENV=development vite build --watch",
+        "test": "vitest"
+    },
+    "devDependencies": {
+        "mime": "^4.0.4"
+    },
+    "license": "MIT"
+}

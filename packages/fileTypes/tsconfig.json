@@ -1,0 +1,10 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": "../../tsconfig.json",
+    "include": ["src", "../../.vite-configs/react-lib", "../types/src/index.ts"],
+    "files": ["./src/fileTypes.json"],
+    "compilerOptions": {
+        "outDir": "./dist",
+        "tsBuildInfoFile": "./.tsbuildinfo"
+    }
+}

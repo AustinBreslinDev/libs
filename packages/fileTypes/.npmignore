@@ -1,0 +1,10 @@
+src/
+__test/
+__scripts/
+.vite/
+dist/_jampack
+FileSigs.zip-extracted
+FileSigs.zip
+vite.config.ts
+tsconfig.json
+
