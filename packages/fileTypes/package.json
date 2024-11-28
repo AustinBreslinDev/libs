@@ -23,5 +23,24 @@
     "devDependencies": {
         "mime": "^4.0.4"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "keywords": [
+        "files",
+        "file-types",
+        "mime",
+        "mime-types",
+        "media-formats",
+        "extension-detection",
+        "file-signatures",
+        "content-type-mapping"
+    ],
+    "repository": {
+        "url": "git+https://github.com/AustinBreslinDev/libs/.git",
+        "type": "git"
+    },
+    "packageManager": "pnpm@9.12.1",
+    "engines": {
+        "pnpm": ">=9.12.1",
+        "node": ">=18"
+    }
 }
