@@ -80,7 +80,7 @@ Contributions to FileTypes are welcome! If you notice any errors or omissions in
 
 ## License
 
-FileTypes is distributed under the [MIT License](LICENSE).
+FileTypes is distributed under the [MIT License](license).
 
 ## Credit to
 [mime](https://github.com/broofa/mime)
