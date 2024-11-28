@@ -1,7 +1,7 @@
 {
     "$schema": "https://json.schemastore.org/package.json",
     "name": "@austinbreslin/file-types",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "module",
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",
@@ -38,6 +38,7 @@
         "url": "git+https://github.com/AustinBreslinDev/libs/.git",
         "type": "git"
     },
+    "homepage": "https://github.com/AustinBreslinDev/libs/",
     "packageManager": "pnpm@9.12.1",
     "engines": {
         "pnpm": ">=9.12.1",

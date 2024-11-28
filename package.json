@@ -20,6 +20,7 @@
         "tsx": "^4.19.2",
         "fs-extra": "^11.2.0"
     },
+    "homepage": "https://github.com/AustinBreslinDev/libs/",
     "repository": {
         "url": "git+https://github.com/AustinBreslinDev/libs/.git",
         "type": "git"
