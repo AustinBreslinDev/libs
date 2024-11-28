@@ -136,9 +136,9 @@
     },
     {
         "fileClass": "System",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [0, 0, 3, 243],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -248,9 +248,9 @@
     },
     {
         "fileClass": "E-mail",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [0, 13, 187, 160],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -262,9 +262,9 @@
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [0, 20, 0, 0, 1, 2],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -395,16 +395,16 @@
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [4, 0, 0, 0],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [5, 0, 0, 0],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -921,9 +921,9 @@
     },
     {
         "fileClass": "Compressed archive",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [48, 55, 48, 55, 48],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -949,9 +949,9 @@
     },
     {
         "fileClass": "Network",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [52, 205, 178, 161],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -963,9 +963,9 @@
     },
     {
         "fileClass": "Compressed archive",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [55, 228, 83, 150, 201, 219, 214, 7],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -1122,9 +1122,9 @@
     },
     {
         "fileClass": "Network",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [65, 67, 83, 68],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -1206,9 +1206,9 @@
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [66, 65, 65, 68],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -1571,9 +1571,9 @@
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [70, 73, 76, 69],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -1805,9 +1805,9 @@
     },
     {
         "fileClass": "Compressed archive",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [75, 87, 65, 74, 136, 240, 39, 209],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -2522,9 +2522,9 @@
     },
     {
         "fileClass": "Multimedia",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [80, 97, 86, 69],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -2763,16 +2763,16 @@
     },
     {
         "fileClass": "Compressed archive",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [83, 90, 32, 136, 240, 39, 51, 209],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Compressed archive",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [83, 90, 68, 68, 136, 240, 39, 51],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3043,9 +3043,9 @@
     },
     {
         "fileClass": "Compressed archive",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [98, 101, 103, 105, 110],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3058,9 +3058,9 @@
     },
     {
         "fileClass": "System",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [98, 112, 108, 105, 115, 116],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3289,16 +3289,16 @@
     },
     {
         "fileClass": "Mobile",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [111, 60],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Encryption",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [111, 112, 100, 97, 116, 97, 48, 49],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3496,9 +3496,9 @@
     },
     {
         "fileClass": "Linux-Unix",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [127, 69, 76, 70],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3603,16 +3603,16 @@
     },
     {
         "fileClass": "Network",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [161, 178, 195, 212],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Network",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [161, 178, 205, 52],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3645,9 +3645,9 @@
     },
     {
         "fileClass": "Programming",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [172, 237],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3743,9 +3743,9 @@
     },
     {
         "fileClass": "Miscellaneous",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [205, 32, 170, 170, 2, 0, 0, 0],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3764,9 +3764,9 @@
     },
     {
         "fileClass": "Programming",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [206, 250, 237, 254],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3785,9 +3785,9 @@
     },
     {
         "fileClass": "Programming",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [207, 250, 237, 254],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -3933,9 +3933,9 @@
     },
     {
         "fileClass": "Network",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [212, 195, 178, 161],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -4017,16 +4017,16 @@
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [235, 82, 144, 45, 70, 86, 69, 45],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [235, 88, 144, 45, 70, 86, 69, 45],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -4045,9 +4045,9 @@
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [239, 187, 191],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -4073,30 +4073,30 @@
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [240, 255, 255],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [248, 255, 255, 255],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [248, 255, 255, 15, 255, 255, 255, 15],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [248, 255, 255, 15, 255, 255, 255, 255],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -4227,23 +4227,23 @@
     },
     {
         "fileClass": "Programming",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [254, 237, 250, 206],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Programming",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [254, 237, 250, 207],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Programming",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [254, 237, 254, 237],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -4255,9 +4255,9 @@
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [254, 255],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
@@ -4341,16 +4341,16 @@
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [255, 254],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {
         "fileClass": "Windows",
-        "fileExtensions": ["(none)"],
+        "fileExtensions": [],
         "headerHex": [255, 254, 0, 0],
-        "mimeTypes": [null],
+        "mimeTypes": [],
         "headerOffset": 0
     },
     {

@@ -97,7 +97,7 @@ async function downloadAndExtractFile(url: string, outputPath: string) {
             // const description = signature["File description"];
             const fileClass = signature.FileClass;
 
-            const fileExtensions = fileExtensionRaw.split("|");
+            const fileExtensions = fileExtensionRaw.split("|").filter((x) => x !== "(none)");
 
             result.push({
                 // description,
