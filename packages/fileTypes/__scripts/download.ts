@@ -87,7 +87,7 @@ async function downloadAndExtractFile(url: string, outputPath: string) {
     }
 
     // Step 6: using mime types build fill out more info
-    const result: FileSigsParsed = [];
+    let result: FileSigsParsed = [];
     for (const signature of fileSigs.filesigs) {
         try {
             const headerHexRaw = signature["Header (hex)"];
@@ -113,7 +113,12 @@ async function downloadAndExtractFile(url: string, outputPath: string) {
         }
     }
 
-    // Step 7: output the contents of results to our source code
+    // Step 8: Sort the result by length of headerHex
+    result = result.sort((a, b) => {
+        return a.headerHex.length - b.headerHex.length;
+    });
+
+    // Step 9: output the contents of results to our source code
     if (result.length > 0 && !fs.existsSync("./src/fileTypes.json")) {
         try {
             fs.writeFile("./src/fileTypes.json", JSON.stringify(result, null, 4), { encoding: "utf8" });
@@ -122,7 +127,7 @@ async function downloadAndExtractFile(url: string, outputPath: string) {
         }
     }
 
-    return result;
+    console.log("Completed");
 }
 
 const url = "https://www.garykessler.net/software/FileSigs.zip";

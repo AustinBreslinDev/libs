@@ -1,14 +1,31 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
-        "rootDirs": ["./libs/ui-components/src"],
+        "rootDirs": [
+            "./packages/fetcher/src/index.ts",
+            "./packages/fileTypes/src/index.ts",
+            "./packages/pledge/src/index.ts",
+            "./packages/safe/src/index.ts"
+        ],
         "paths": {
-            "@austinbreslin/just-do": ["./libs/just-do/src/index.ts"]
+            "@austinbreslin/fetcher": ["./packages/fetcher/src/index.ts"],
+            "@austinbreslin/fileTypes": ["./packages/fileTypes/src/index.ts"],
+            "@austinbreslin/pledge": ["./packages/pledge/src/index.ts"],
+            "@austinbreslin/safe": ["./packages/safe/src/index.ts"]
         }
     },
     "references": [
         {
-            "path": "./libs/ui-components-plain/tsconfig.json"
+            "path": "./packages/fetcher/tsconfig.json"
+        },
+        {
+            "path": "./packages/fileTypes/tsconfig.json"
+        },
+        {
+            "path": "./packages/pledge/tsconfig.json"
+        },
+        {
+            "path": "./packages/safe/tsconfig.json"
         }
     ]
 }

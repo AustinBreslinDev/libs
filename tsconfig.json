@@ -47,15 +47,5 @@
         "useDefineForClassFields": true,
         "useUnknownInCatchVariables": true
     },
-    "include": [
-        "./apps/**/src/**/*.tsx",
-        "./libs/**/src/**/*.tsx",
-        "./apps/**/src/**/*.ts",
-        "./libs/**/src/**/*.ts",
-        "next-env.d.ts",
-        ".next/types/**/*.ts",
-        "./libs/types/dist/index.d.ts"
-    ],
-    "exclude": ["node_modules", "**/dist"],
-    "extends": "./tsconfig.packages.json"
+    "exclude": ["node_modules", "**/dist"]
 }

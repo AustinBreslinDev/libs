@@ -1,7 +1,7 @@
 {
     "$schema": "https://json.schemastore.org/package.json",
-    "name": "@austinbreslin/file-types",
-    "version": "1.0.4",
+    "name": "@austinbreslin/safe-json",
+    "version": "1.0.0",
     "type": "module",
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",
@@ -17,22 +17,12 @@
         "lint": "tsc --noEmit && biome check ./src --config-path ../../biome.json",
         "dev:lib": "NODE_ENV=development vite build --watch",
         "test": "vitest",
+        "test:bench": "vitest bench",
         "test:debug": "npm run test -- --inspect --no-file-parallelism --ui"
     },
-    "devDependencies": {
-        "mime": "^4.0.4"
-    },
+    "dependencies": {},
     "license": "MIT",
-    "keywords": [
-        "files",
-        "file-types",
-        "mime",
-        "mime-types",
-        "media-formats",
-        "extension-detection",
-        "file-signatures",
-        "content-type-mapping"
-    ],
+    "keywords": [],
     "repository": {
         "url": "git+https://github.com/AustinBreslinDev/libs/.git",
         "type": "git"
