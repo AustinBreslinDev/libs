@@ -62,6 +62,7 @@ export type PledgeFetchOptions = Omit<RequestInit, "method"> & {
     /** defaults to true */
     retryOptions?: RetryOptions;
     timeoutOptions?: TimeoutOptions;
+    parserOptions?: ParserOptions;
 };
 
 /**
@@ -143,8 +144,9 @@ async function fetchAnyRequests<T>(requests: FetchRequestConfig[]): Promise<Pled
 /**
  * Wrapper around `fetch` that checks the response's status and throws an error if it's not ok.
  */
-async function fetchWithOkCheck(url: string, options: RequestInit) {
-    const res = await fetch(url, options);
+async function fetchWithOkCheck(url: string, options: FullFetchOptions) {
+    const fetcher = options.fetchImplementation || fetch;
+    const res = await fetcher(url, options);
     if (!res.ok) {
         throw new PledgeFetchError(options.method || HttpMethods.get, url, res.status);
     }
@@ -176,7 +178,15 @@ async function fetchWithRetry(url: string, options: FullFetchOptions, attemptCou
  */
 async function pledgeFetch<T>(url: string, options: FullFetchOptions, fn: FetchMethodValue) {
     const timeoutLimit = options.timeoutOptions.timeLimitMs || Number.POSITIVE_INFINITY;
-    return await pledgeTimed<T>(
+    if (fn === ResponseFmtFns.json && options.parserOptions?.json) {
+        return pledgeTimed<T>(
+            fetchWithRetry(url, options)
+                .then((res) => res?.text())
+                .then((res) => ((options.parserOptions as ParserOptions).json as (x: string) => any)(res as string)),
+            timeoutLimit,
+        );
+    }
+    return pledgeTimed<T>(
         fetchWithRetry(url, options).then((res) => res?.[fn]()),
         timeoutLimit,
     );
@@ -200,9 +210,15 @@ type TimeoutOptions = {
     timeLimitMs: number;
 };
 
+type ParserOptions = {
+    /** JSON parser */
+    json?: (data: string) => any;
+};
+
 type FullFetchOptions = PledgeFetchOptions & { method: MethodValue } & {
     retryOptions: RetryOptions;
     timeoutOptions: TimeoutOptions;
+    fetchImplementation?: (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>;
 };
 
 type MethodKey = keyof typeof HttpMethods;

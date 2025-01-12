@@ -73,7 +73,9 @@ describe("parseJSONStream Invalid JSON Parsing", () => {
 
     it("fails on functions", () => {
         const [error] = parse("function() {}");
-        expect(error?.message).toEqual("Unexpected token 'u', \"function() {}\" is not valid JSON");
+        expect(error?.message.toString().startsWith("Unexpected token 'u', \"function() {}\" is not valid JSON")).toBe(
+            true,
+        );
     });
 
     // it("fails on __proto__", () => {
@@ -83,43 +85,57 @@ describe("parseJSONStream Invalid JSON Parsing", () => {
 
     it("fails on unclosed objects", () => {
         const [error] = parse('{"key": "value"');
-        expect(error?.message).toEqual("Expected ',' or '}' after property value in JSON at position 15");
+        expect(
+            error?.message.toString().startsWith("Expected ',' or '}' after property value in JSON at position 15"),
+        ).toBe(true);
     });
 
     it("fails on unclosed arrays", () => {
         const [error] = parse("[1, 2, 3");
-        expect(error?.message).toEqual("Expected ',' or ']' after array element in JSON at position 8");
+        expect(
+            error?.message.toString().startsWith("Expected ',' or ']' after array element in JSON at position 8"),
+        ).toBe(true);
     });
 
     it("fails on invalid characters", () => {
         const [error] = parse('{"key" = "value"}');
-        expect(error?.message).toEqual("Expected ':' after property name in JSON at position 7");
+        expect(error?.message.toString().startsWith("Expected ':' after property name in JSON at position 7")).toBe(
+            true,
+        );
     });
 
     it("fails on trailing commas", () => {
         const [error1] = parse("[1, 2, 3, ]");
         const [error2] = parse('{"key": "value",}');
 
-        expect(error1?.message).toEqual(`Unexpected token ']', "[1, 2, 3, ]" is not valid JSON`);
-        expect(error2?.message).toEqual("Expected double-quoted property name in JSON at position 16");
+        expect(error1?.message.toString().startsWith(`Unexpected token ']', "[1, 2, 3, ]" is not valid JSON`)).toBe(
+            true,
+        );
+        expect(
+            error2?.message.toString().startsWith("Expected double-quoted property name in JSON at position 16"),
+        ).toBe(true);
     });
 
     it("fails on missing commas", () => {
         const [error1] = parse("[1 2 3]");
         const [error2] = parse('{"key1": "value1" "key2": "value2"}');
 
-        expect(error1?.message).toEqual("Expected ',' or ']' after array element in JSON at position 3");
-        expect(error2?.message).toEqual("Expected ',' or '}' after property value in JSON at position 18");
+        expect(
+            error1?.message.toString().startsWith("Expected ',' or ']' after array element in JSON at position 3"),
+        ).toBe(true);
+        expect(
+            error2?.message.toString().startsWith("Expected ',' or '}' after property value in JSON at position 18"),
+        ).toBe(true);
     });
 
     it("fails on invalid escape sequences", () => {
         const [error] = parse('"\\q"');
 
-        expect(error?.message).toEqual("Bad escaped character in JSON at position 2");
+        expect(error?.message.toString().startsWith("Bad escaped character in JSON at position 2")).toBe(true);
     });
 
     it("fails on unterminated strings", () => {
         const [error] = parse('"unterminated');
-        expect(error?.message).toEqual("Unterminated string in JSON at position 13");
+        expect(error?.message.toString().startsWith("Unterminated string in JSON at position 13")).toBe(true);
     });
 });

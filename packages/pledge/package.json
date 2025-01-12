@@ -1,14 +1,15 @@
 {
     "$schema": "https://json.schemastore.org/package.json",
     "name": "@austinbreslin/pledge",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "module",
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "exports": {
         "types": "./dist/index.d.ts",
-        "import": "./dist/index.js"
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs"
     },
     "scripts": {
         "build": "NODE_ENV=production rimraf ./dist && vite build && jampack ./dist",
@@ -28,9 +29,9 @@
         "type": "git"
     },
     "homepage": "https://github.com/AustinBreslinDev/libs/",
-    "packageManager": "pnpm@9.12.1",
+    "packageManager": "pnpm@9.15.2",
     "engines": {
-        "pnpm": ">=9.12.1",
-        "node": ">=18"
+        "pnpm": ">=9.15.2",
+        "node": ">=20"
     }
 }

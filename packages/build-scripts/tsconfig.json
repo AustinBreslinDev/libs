@@ -3,8 +3,7 @@
     "extends": "../../tsconfig.json",
     "include": [
         "src",
-        "../../.vite-configs/react-lib",
-        "../types/src/index.ts"
+        "../../.vite-configs/react-lib"
     ],
     "compilerOptions": {
         "outDir": "./dist",

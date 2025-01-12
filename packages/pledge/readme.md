@@ -1,8 +1,6 @@
 # Pledge: A Promise Wrapper for Error Handling and Timed Functions
 
-<!--toc:start-->
-
-- [Pledge: A Promise Wrapper for Error Handling and Timed Functions](#pledge-a-promise-wrapper-for-error-handling-and-timed-functions)
+- [**Pledge**: A Promise Wrapper for Error Handling and Timed Functions](#pledge-a-promise-wrapper-for-error-handling-and-timed-functions)
   - [Installation](#installation)
   - [API](#api)
     - [newPledge](#newpledge)
@@ -18,32 +16,30 @@
     - [pledgeAllSettledTimed](#pledgeallsettledtimed)
     - [pledgeWait](#pledgewait)
 
-<!--toc:end-->
-
-Pledge is a utility library designed to simplify error handling in JavaScript applications using Promises.
+**Pledge** is a utility library designed to simplify error handling in JavaScript applications using Promises.
 It provides functions that wrap promises, try-catch blocks, callback-based functions, and timed operations,
 returning tuples instead of throwing errors.
 
 - All pledge items return a tuple/array with the first item in the tuple being an Error | undefined and the second
-  item in the tuple being of type T | undefined.
-- Pledge has a type for this tuple called PledgeResult<T>
+  item in the tuple being of type `T | undefined`.
+- Pledge has a type for this tuple called `PledgeResult<T> `
 - All pledge functions take an optional parameter object that allows you to supply an abort controller, giving
   you the ability to cancel the execution of the promise at any time.
-- Pledge has full Typescript support
+- **Pledge** has full Typescript support
 
 ## Installation
 
-You can install Pledge via npm or pnpm:
+You can install **Pledge** via npm or pnpm:
 
 **npm**
 
-```terminal
+```bash
 npm install @austinbreslin/pledge
 ```
 
 **pnpm**
 
-```terminal
+```bash
 pnpm add @austinbreslin/pledge
 ```
 
