@@ -6,10 +6,6 @@
         "../../.vite-configs/react-lib",
         "../types/src/index.ts"
     ],
-    "files": [
-        "./src/fileTypes.json",
-        "./src/getType.ts"
-    ],
     "compilerOptions": {
         "outDir": "./dist",
         "tsBuildInfoFile": "./.tsbuildinfo"

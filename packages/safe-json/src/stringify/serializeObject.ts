@@ -2,10 +2,10 @@ import { serialize } from "./serialize.js";
 import { serializeString } from "./serializeString.js";
 import type { GeneratorSerializer } from "./ts-types.js";
 
-export const serializeObject: GeneratorSerializer<string, object> = function*(value, context, replacer) {
-    if ("toJSON" in value && typeof value.toJSON === "function") {
-        value = value.toJSON();
-    }
+export const serializeObject: GeneratorSerializer<string, object> = function* (value, context, replacer) {
+    // if ("toJSON" in value && typeof value.toJSON === "function") {
+    //     value = value.toJSON();
+    // }
 
     context.path.push(""); // Add a placeholder for object keys
     yield "{";

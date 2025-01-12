@@ -1,6 +1,4 @@
-# **Safe-JSON**: Handle JSON Safely in TypeScript and JavaScript
-
-<!--toc:start-->
+# Safe-JSON: Handle JSON Safely in TypeScript and JavaScript
 
 - [**Safe-JSON**: Handle JSON Safely in TypeScript and JavaScript](#safe-json-handle-json-safely-in-typescript-and-javascript)
   - [Why Use **Safe-JSON**?](#why-use-safe-json)
@@ -11,6 +9,7 @@
   - [Usage](#usage)
   - [Notes](#notes)
     - [Performance](#performance)
+      - [Package Size](#package-size)
     - [Design Goals](#design-goals)
   - [Detailed Features](#detailed-features)
     - [Normalizing Null/Undefined/NaN/Invalid Dates](#normalizing-nullundefinednaninvalid-dates)
@@ -19,11 +18,11 @@
     - [Infinity](#infinity)
   - [Summary](#summary)
 
-<!--toc:end-->
-
 ## Why Use **Safe-JSON**?
 
-JavaScript's native `JSON.parse` and `JSON.stringify` can throw runtime errors that are not reflected in TypeScript definitions, making them error-prone and unpredictable. These errors often stem from JavaScript quirks and limitations, such as:
+JavaScript's native `JSON.parse` and `JSON.stringify` can throw runtime errors
+that are not reflected in TypeScript definitions, making them error-prone and unpredictable.
+These errors often stem from JavaScript quirks and limitations, such as:
 
 - Handling of `null` and `undefined`.
 - Special numeric values (`NaN`, `Infinity`).
@@ -31,7 +30,8 @@ JavaScript's native `JSON.parse` and `JSON.stringify` can throw runtime errors t
 - BigInt values.
 - Circular references in objects.
 
-**Safe-JSON** eliminates this confusion by offering safe alternatives that never throw. Instead, all methods return a tuple of `[error, result]`, allowing you to handle errors explicitly and gracefully.
+**Safe-JSON** eliminates this confusion by offering safe alternatives that never throw.
+Instead, all methods return a tuple of `[error, result]`, allowing you to handle errors explicitly and gracefully.
 
 ______________________________________________________________________
 
@@ -136,9 +136,15 @@ ______________________________________________________________________
 If performance is a critical concern, consider using native JSON methods where safety is less of a priority or
 exploring alternatives like BSON for more efficient serialization.
 
+#### Package Size
+
+The package size is around 6kb, npm lists the type definitions and both the Common JS and ESM build. You will
+only use one of these.
+
 ### Design Goals
 
-The primary goal of **Safe-JSON** is to eliminate undefined behavior and prevent unexpected runtime errors. It aims to:
+The primary goal of **Safe-JSON** is to eliminate undefined behavior and prevent unexpected runtime errors.
+It aims to:
 
 ______________________________________________________________________
 
@@ -155,18 +161,19 @@ JSON only supports null. **Safe-JSON** converts these variations to JSON-complia
 
 ### BigInts
 
-Native JSON does not support JavaScript's `BigInt` type. **Safe-JSON** properly serializes `BigInt` values and restores them
-during deserialization.
+Native JSON does not support JavaScript's `BigInt` type. **Safe-JSON** properly serializes `BigInt` values
+and restores them during deserialization.
 
 ### Circular References
 
-Circular references cause native `JSON.stringify` to throw an error. **Safe-JSON** detects and replaces circular references with descriptive pointers
-(e.g., `$ref.root.path`). This ensures error-free serialization while preserving structure.
+Circular references cause native `JSON.stringify` to throw an error. **Safe-JSON** detects and replaces
+circular references with descriptive pointers (e.g., `$ref.root.path`). This ensures error-free
+serialization while preserving structure.
 
 ### Infinity
 
-JavaScript's `Infinity` constants represent invalid numbers in JSON. **Safe-JSON** replaces these values with `null` during
-serialization to maintain JSON compliance.
+JavaScript's `Infinity` constants represent invalid numbers in JSON. **Safe-JSON** replaces these values
+with `null` during serialization to maintain JSON compliance.
 
 ## Summary
 
