@@ -142,7 +142,7 @@ export const serverVite = defineConfig({
             external: nodeExternals,
             treeshake: isProd ? "smallest" : "safest",
             output: {
-                preserveModules: true,
+                preserveModules: false,
             },
         },
     },
